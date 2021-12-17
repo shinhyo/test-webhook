@@ -1,5 +1,12 @@
 name: Configuration Check
 on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        description: 'Name?'
+        default: 'World'
+        required: true
   repository_dispatch:
     types:
       - configuration-check
