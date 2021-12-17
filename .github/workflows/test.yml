@@ -13,7 +13,8 @@ on:
 jobs:
   check:
     name: Run check
-    runs-on: ubuntu-latest
+#    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Say hello
         run: echo Hello!
